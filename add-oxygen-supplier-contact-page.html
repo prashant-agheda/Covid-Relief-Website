@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For Displaying Favicon on Website -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/covid-relief-logo.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Linking My Custom CSS File -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS and Material ICONS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title> Add a Oxygen Supplier Information </title>
+  </head>
+  <body>
+
+    <!-- Navigation Bar with Options -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" style="background-color: #FE2C54;"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <div class="logo-container">
+                    Covid Relief
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./index.html">
+                            <span class="material-icons">home</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./plasma-donors-list-page.html">
+                            <span class="material-icons">bloodtype</span>
+                            Plasma Donors
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./hospital-beds-list-page.html">
+                            <span class="material-icons">local_hospital</span>
+                            Hospital Beds
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./oxygen-suppliers-list-page.html">
+                            <span class="material-icons">air</span>
+                            Oxygen Suppliers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./meds-injection-suppliers-list-page.html">
+                            <span class="material-icons">medication</span>
+                            Meds Suppliers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./ambulance-providers-list-page.html">
+                            <span class="material-icons">airport_shuttle</span>
+                            Ambulance Providers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./tiffin-service-list-page.html">
+                            <span class="material-icons">takeout_dining</span>
+                            Tiffin Service
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown m-1 pb-1">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons">more_vert</span>
+                            More Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./all-resources-page.html" target="_parent">All Resources</a></li>
+                            <li><a class="dropdown-item" href="./websites-list-page.html" target="_parent">Websites</a></li>
+                            <li><a class="dropdown-item" href="./instagram-resources-list-page.html" target="_parent">Instagram</a></li>
+                            <li><a class="dropdown-item" href="./twitter-resources-list-page.html" target="_parent">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Body -->
+    <section>
+        <!-- Form -->
+        <div class="container mt-5 p-4">
+            <form class="border border-info border-4 rounded-3 p-4 mb-5">
+                <h1 class="display-6 fw-bold mark text-center mb-5">
+                    Share Oxygen Supplier Information
+                </h1>
+            
+                <div class="form mb-4">
+                  <label for="floatingInput" class="p-1"><b>Name *</b></label>
+                  <input type="text" class="form-control" id="floatingInput" />
+                </div>
+
+                <div class="form mb-4">
+                    <label for="floatingInput" class="p-1"><b>Phone Number *</b></label>
+                    <input type="text" maxlength="10" class="form-control" id="floatingInput" placeholder="10 Digits only..." />
+                </div>
+
+                <div class="form mb-4">
+                    <label for="floatingInput" class="p-1"><b>Alternate Phone Number</b></label>
+                    <input type="text" maxlength="10" class="form-control" id="floatingInput" placeholder="Secondary Mobile No..." />
+                </div>
+
+                <div class="form mb-4">
+                    <label for="floatingInput" class="p-1"><b>Address (optional)</b></label>
+                    <input type="text" class="form-control" id="floatingInput" placeholder="New Sangvi, Pune">
+                </div>
+
+                <div class="form mb-4">
+                    <label for="inputState" class="form-label"><b>Choose your City *</b></label>
+                    <select id="inputState" class="form-select p-2">
+                        <option selected>Select City</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Ahmedabad</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Surat</option>
+                        <option>Pune</option>
+                        <option>Jaipur</option>
+                        <option>Lucknow</option>
+                        <option>Indore</option>
+                        <option>Thane</option>
+                        <option>Agra</option>
+                        <option>Ghaziabad</option>
+                    </select>
+                </div>
+
+                <div class="form-check mb-5">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      I hereby Agree to Terms and Conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                </div>
+
+                <a class="d-grid gap-2 col-12 mx-auto w-80 btn btn-primary mb-3 border border-none" href="#" role="button" type="submit" style="background-color: #650013;">
+                    Submit
+                </a>
+                
+                <a class="d-grid gap-2 col-12 mx-auto w-80 btn btn-info" href="./oxygen-suppliers-list-page.html" role="button">
+                    View All Oxygen Suppliers
+                </a>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row pt-3 pb-2" style="background-color: #FE2C54;">
+            <div class="col-4 d-flex justify-content-around align-items-center">
+                <p class="text-white">
+                    &copy; 2021 &middot; Made with ❤ and Bootstrap
+                </p>
+            </div>
+
+            <div class="col-4 d-flex justify-content-around">
+                <a href="./terms-and-conditions-page.html" target="_parent" class="text-white">Terms & Conditions</a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-around">
+                <a href="#" class="text-white">Back to Top</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Code to Disable Right Click on Webpage
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    
+  </body>
+</html>

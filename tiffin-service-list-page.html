@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For Displaying Favicon on Website -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/covid-relief-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/covid-relief-logo.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Linking My Custom CSS File -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS and Material ICONS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title> List of Tiffin Service Providers </title>
+  </head>
+  <body>
+
+    <!-- Navigation Bar with Options -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" style="background-color: #FE2C54;"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <div class="logo-container">
+                    Covid Relief
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./index.html">
+                            <span class="material-icons">home</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./plasma-donors-list-page.html">
+                            <span class="material-icons">bloodtype</span>
+                            Plasma Donors
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./hospital-beds-list-page.html">
+                            <span class="material-icons">local_hospital</span>
+                            Hospital Beds
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./oxygen-suppliers-list-page.html">
+                            <span class="material-icons">air</span>
+                            Oxygen Suppliers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./meds-injection-suppliers-list-page.html">
+                            <span class="material-icons">medication</span>
+                            Meds Suppliers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./ambulance-providers-list-page.html">
+                            <span class="material-icons">airport_shuttle</span>
+                            Ambulance Providers
+                        </a>
+                    </li>
+                    <li class="nav-item m-1 pb-1 ">
+                        <a class="nav-link active" aria-current="page" href="./tiffin-service-list-page.html">
+                            <span class="material-icons">takeout_dining</span>
+                            Tiffin Service
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown m-1 pb-1">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons">more_vert</span>
+                            More Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./all-resources-page.html" target="_parent">All Resources</a></li>
+                            <li><a class="dropdown-item" href="./websites-list-page.html" target="_parent">Websites</a></li>
+                            <li><a class="dropdown-item" href="./instagram-resources-list-page.html" target="_parent">Instagram</a></li>
+                            <li><a class="dropdown-item" href="./twitter-resources-list-page.html" target="_parent">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Page Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Page Refreshed...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <section>
+            <!-- Body -->
+            <div class="container pt-5">
+                <p class="display-6 fw-bold m-auto">Available Tiffin Service Providers</p>
+                <br/>
+                <p class="lead m-auto">
+                    List of People’s who can provide Tiffin Service for the patients in need.
+                </p>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-4 p-3">
+                        <a class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Your City from the dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Delhi</a></li>
+                            <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                            <li><a class="dropdown-item" href="#">Ahmedabad</a></li>
+                            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+                            <li><a class="dropdown-item" href="#">Chennai</a></li>
+                            <li><a class="dropdown-item" href="#">Kolkata</a></li>
+                            <li><a class="dropdown-item" href="#">Surat</a></li>
+                            <li><a class="dropdown-item" href="#">Pune</a></li>
+                            <li><a class="dropdown-item" href="#">Jaipur</a></li>
+                            <li><a class="dropdown-item" href="#">Lucknow</a></li>
+                            <li><a class="dropdown-item" href="#">Indore</a></li>
+                            <li><a class="dropdown-item" href="#">Thane</a></li>
+                            <li><a class="dropdown-item" href="#">Agra</a></li>
+                            <li><a class="dropdown-item" href="#">Ghaziabad</a></li>
+                        </ul>
+    
+                        <!-- Button trigger modal and refresh -->
+                        <a class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" id="refresh-button" role="button">
+                            Refresh Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Page Status</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Page Refreshed...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+            <!-- Table Here -->
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered border-danger">
+                        <thead class="table text-white" style="background-color: #650013;">
+                            <th>Name</th>
+                            <th>Mobile No</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Rate (per Tiffin)</th>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td>Ramesh D</td>
+                                <td>1234567890</td>
+                                <td>Kothrud, Lane no 2, Royal Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 300 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Leela M</td>
+                                <td>1234567890</td>
+                                <td>Baner, Lane no 1, Diamond Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 500 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Tara Das</td>
+                                <td>1234567890</td>
+                                <td>Pimpri Chinchwad, Manek Heights</td>
+                                <td>Pune</td>
+                                <td>Rs. 400 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Jaya K</td>
+                                <td>1234567890</td>
+                                <td>Koregaon Park, Lane no 6, Palms Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 700 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Ramesh D</td>
+                                <td>1234567890</td>
+                                <td>Kothrud, Lane no 2, Royal Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 300 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Leela M</td>
+                                <td>1234567890</td>
+                                <td>Baner, Lane no 1, Diamond Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 500 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Tara Das</td>
+                                <td>1234567890</td>
+                                <td>Pimpri Chinchwad, Manek Heights</td>
+                                <td>Pune</td>
+                                <td>Rs. 400 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Jaya K</td>
+                                <td>1234567890</td>
+                                <td>Koregaon Park, Lane no 6, Palms Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 700 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Ramesh D</td>
+                                <td>1234567890</td>
+                                <td>Kothrud, Lane no 2, Royal Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 300 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Leela M</td>
+                                <td>1234567890</td>
+                                <td>Baner, Lane no 1, Diamond Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 500 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Tara Das</td>
+                                <td>1234567890</td>
+                                <td>Pimpri Chinchwad, Manek Heights</td>
+                                <td>Pune</td>
+                                <td>Rs. 400 /-</td>
+                            </tr>
+                            <tr>
+                                <td>Jaya K</td>
+                                <td>1234567890</td>
+                                <td>Koregaon Park, Lane no 6, Palms Society</td>
+                                <td>Pune</td>
+                                <td>Rs. 700 /-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <p class="lead mt-5">To Share any Information related to Tiffin Service Providers</p>
+    
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 mb-3">
+                    <a class="btn btn-warning mb-5" href="./add-tiffin-service-contact-page.html" role="button">
+                        Click Here to ADD Information about Tiffin Service Provider
+                    </a>
+                </div>
+            </div>
+    
+        </section>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row pt-3 pb-2" style="background-color: #FE2C54;">
+            <div class="col-4 d-flex justify-content-around align-items-center">
+                <p class="text-white">
+                    &copy; 2021 &middot; Made with ❤ and Bootstrap
+                </p>
+            </div>
+
+            <div class="col-4 d-flex justify-content-around">
+                <a href="./terms-and-conditions-page.html" target="_parent" class="text-white">Terms & Conditions</a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-around">
+                <a href="#" class="text-white">Back to Top</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Code to Disable Right Click on Webpage
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    
+  </body>
+</html>
