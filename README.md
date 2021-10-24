@@ -1,6 +1,6 @@
 # Covid-Relief-Website
 
-- A website that helps people in this tough situation of Covid 19 by providing them the Valid Information about Available Plasma Donors, Hospital Beds, Oxygen Suppiers, Medicine/Injection Suppliers, Ambulance Service Providers and Meal/Tiffin Service Providers.
+- A website that helps people in this tough situation of Covid 19 by providing them the Valid Information about Available Plasma Donors, Hospital Beds, Oxygen Suppliers, Medicine/Injection Suppliers, Ambulance Service Providers and Meal/Tiffin Service Providers.
 - Website made using HTML, CSS, JavaScriot and Bootstrap.
 - Created with ❤ by Prashant Agheda 😊
 
